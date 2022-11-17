@@ -58,12 +58,12 @@ def prepare_data(args):
         transforms.ToTensor(),
         transforms.Normalize((0.5, ),(0.5, ))
     ])
-    train_dataset = datasets.MNIST(root="./data",
+    train_dataset = datasets.MNIST(root='./data',
                                    transform=transform,
                                    train=True,
                                    download=True)
 
-    eval_dataset = datasets.MNIST(root="./data",
+    eval_dataset = datasets.MNIST(root='./data',
                                   transform=transform,
                                   train=False)
 
