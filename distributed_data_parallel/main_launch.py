@@ -112,6 +112,7 @@ def train(
 
         optimizer.step() 
         optimizer.zero_grad()
+        model.zero_grad()
 
     return loss_cache
 
